@@ -1,0 +1,13 @@
+name: Coba
+
+on: [issues]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: iamn00b/coba-actions@master
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
