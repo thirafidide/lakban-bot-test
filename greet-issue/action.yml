@@ -1,0 +1,10 @@
+name: 'Coba Action 2'
+description: 'The aim is to greet any new issues'
+author: 'Thirafi Dide'
+inputs:
+  repo-token:
+    description: 'Token for the repo. Can be passed in using {{ secrets.GITHUB_TOKEN }}'
+    required: true
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
