@@ -11,7 +11,7 @@ const production = !process.env.ROLLUP_WATCH;
 export default {
   input: 'greet-issue/src/main.ts',
   output: {
-    file: 'lib/main.js',
+    file: 'greet-issue/dist/main.js',
     format: 'cjs',
   },
   plugins: [
