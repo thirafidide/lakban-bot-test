@@ -4,7 +4,7 @@
   "description": "An action for greeting first time contributors.",
   "main": "lib/main.js",
   "scripts": {
-    "build": "tsdx build --target node",
+    "build": "tsdx build --target node --entry greet-issue/src/main.ts",
     "format": "prettier --write **/*.ts"
   },
   "author": "Thirafi Dide",
