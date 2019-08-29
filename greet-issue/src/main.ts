@@ -16,10 +16,10 @@ async function run() {
       core.debug('Not an issue, skipping');
     }
 
-    if (context.payload.action !== 'opened') {
-      core.debug('No issue was opened, skipping');
-      return;
-    }
+    // if (context.payload.action !== 'opened') {
+    //   core.debug('No issue was opened, skipping');
+    //   return;
+    // }
 
     await client.issues.createComment({
       ...context.issue,

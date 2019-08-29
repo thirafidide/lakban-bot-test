@@ -1,6 +1,6 @@
 name: Coba
 
-on: [issues]
+on: [issues.opened]
 
 jobs:
   build:
