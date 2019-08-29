@@ -9,9 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
 
-      - name: Install Dependencies
-        run: npm install
-
       - uses: ./greet-issue
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}

@@ -4,7 +4,8 @@
   "description": "An action for greeting first time contributors.",
   "main": "lib/main.js",
   "scripts": {
-    "build": "tsdx build --target node --entry greet-issue/src/main.ts",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
     "format": "prettier --write **/*.ts"
   },
   "author": "Thirafi Dide",
@@ -12,6 +13,12 @@
   "devDependencies": {
     "@types/node": "^12.0.4",
     "prettier": "^1.17.1",
+    "rollup": "^1.20.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.1",
+    "rollup-plugin-typescript": "^1.0.1",
     "tsdx": "^0.8.0",
     "tslib": "^1.10.0",
     "typescript": "^3.5.3"
