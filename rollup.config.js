@@ -18,7 +18,9 @@ export default {
     json(),
     typescript(),
     resolve(), // tells Rollup how to find date-fns in node_modules
-    commonjs(), // converts date-fns to ES modules
+    commonjs({
+      ignore: ['conditional-runtime-dependency'],
+    }), // converts date-fns to ES modules
     production && terser(), // minify, but only in production
   ],
 };
